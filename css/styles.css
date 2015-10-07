@@ -5,14 +5,13 @@ html, body {
     color:#3B3F48;
 }
 .body-block {
-	min-height:650px;
+	min-height:675px;
 	position:relative;
 	text-align:center;
 	padding:100px;
 	border-top: 1px solid #ECEBEB; 
     box-shadow: 0px -1px 1px #F4F4F4;
-    background-color:#FEFEFE;    
-	
+    background-color:#FEFEFE;    	
 }
 #skills {
 	background-color:#4CBFA0;
@@ -85,7 +84,7 @@ html, body {
     padding-left: 8px;
     margin-right:0;
 	transition: all 0.3s;
-	z-index:100;
+	z-index:2;
 
 }
 .navbar-inverse .navbar-brand:hover {
@@ -104,7 +103,6 @@ html, body {
 .navlist:before {
   content: "";
   position: absolute;
-  z-index: -1;
   left: 50%;
   right: 50%;
   bottom: 0;
@@ -164,24 +162,39 @@ a:hover, a:focus {
 	background-color:#E46849;
 }
 .footer {
-	height:200px;
-	background-color:#3B3F48;
+	height:175px;
+	background-color:#272A2F;
 	border-top: 1px solid #343434; 
     box-shadow: 0px -1px 1px #242424;
     position:relative;
-    z-index:6000;
-    color:white;
+    color:#E0DFDF;
     text-align:center;
-    padding:60px;
+    padding:30px;
+    font-family: "Open Sans";
 }
-
-#top > div> h1 {
+.footer i {
+	color:white;
+	font-size:24pt;
+	border-radius:50%;
+	width:55px;
+	padding:8px;
+	padding-top:12px;
+	height:55px;
+	background-color:#BF4C2F;
+	margin: 0px 5px;
+	transition:all 0.5s;
+}
+.footer i:hover {
+	color:white;
+	background-color:#EA6A4A;
+}
+h1 {
 	font-family:"Montserrat";
-	font-size: 56pt;
-  height: 100%;
-  width: 100%;
-  font-size: 75px;
-  text-align: center;
+	font-size:48pt;
+  	text-align: center;
+}
+#top > div> h1 {
+  	font-size: 78px;
 }
 
 .about-icon {
@@ -204,7 +217,7 @@ a:hover, a:focus {
 
 .blue {
 	border-radius:60px;
-	width:200px;
+	width:235px;
 	height:60px;
 	line-height:54px;
 	border-color: #338BB7;
@@ -213,15 +226,19 @@ a:hover, a:focus {
 }
 .blue:hover {
 	background-color:white;
-	color:#3B3F48;
+	color:#2B779C;
 }
 .portfolio-list {
 	padding:0;
 }
 .portfolio-block {
-	margin:15px;
-	width: 250px;
+	margin:20px;
+	width: 275px;
 	height: 250px;
 	background-color:gray;
 	display: inline-block;
+}
+.contact-block {
+	min-height:450px;
+	padding:40px;
 }
