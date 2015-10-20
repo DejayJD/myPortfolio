@@ -16,31 +16,37 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- Modal CSS -->
+    <link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
     <!-- FontAwesome -->
     <link href="css/font-awesome.css" rel="stylesheet">
+
     <!-- My CSS -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <a class="navbar-brand" href="#top">
-    <span class="fname">JD</span> <span class="lname">FRANCIS</span>
-    </a>
-    <ul class="nav navbar-nav navbar-right">
-        <li class="navlist"><a href="#about">About</a></li>
-        <li class="navlist"><a href="#skills">Skills</a></li>
-        <li class="navlist"><a href="#portfolio">Portfolio</a></li>
-        <li class="navlist"><a href="#contact">Contact</a></li>
-      </ul>
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#top">
+        <span class="fname">JD</span> <span class="lname">FRANCIS</span>
+        </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navlist"><a href="#about">About</a></li>
+                <li class="navlist"><a href="#skills">Skills</a></li>
+                <li class="navlist"><a href="#portfolio">Portfolio</a></li>
+                <li class="navlist"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="body-block head-block" id="top">
         <div class="center">
@@ -48,7 +54,7 @@
             <h1 class="header"> John David Francis </h1>
             <hr style="width:150px; border-width: 3px; margin-bottom:0">
             <hr style="width:150px; border-width: 3px; margin-top:4px">
-            <h2 class="header"> Game Programmer and Web Developer</h2>
+            <h2 class="header"> Game Programmer/<br> Front-End Web Developer</h2>
             <a class="cta-block" href="#about"><div class="cta-button">Who Am I</div></a>
         </div>
     </div>
@@ -57,7 +63,7 @@
                 <i class="fa fa-user about-icon"> </i>
             <div class="about-block">
             <h2 style="margin:auto; margin-bottom:25px; text-align:center"> About Me </h2>
-                <p> My name is John David Francis, but everybody calls me JD. <br> I am passionate about gaming, a programming student, an e-sports enthusiast, an avid coffee drinker, but most importantly, I make games and websites. <br> I have a passion for developing creative and entertaining games. </p>
+                <p> My name is John David Francis, but everyone calls me JD. <br> I'm currently a third-year programming student studying Computer Science with a Game Development specialization at Southern Methodist University. <br><br> I am many things including: programming student, gaming fanatic, e-sports enthusiast, avid coffee drinker, but most importantly; <br> I love making games and websites. <br><br> I have a strong passion for developing creative and entertaining games as well as designing the front-end for functional and aesthetic websites. </p>
             </div>
             <a class="cta-block" href="#contact" style="margin-top:25px"><div class="cta-button blue">Contact Me</div></a>
         </div>
@@ -66,20 +72,20 @@
         <h2> My Skills </h2>
         <div class="container">
             <div class="col-md-4">
-                <h2> Game Development </h2>
+                <h2> <i class="fa fa-gamepad"></i> Game Development </h2>
             </div>
             <div class="col-md-4">
-                <h2> Web Development </h2>
+                <h2> <i class="fa fa-laptop"></i> Web Development </h2>
             </div>
             <div class="col-md-4">
-                <h2> Programming </h2>
+                <h2> <i class="fa fa-terminal"></i> Programming </h2>
             </div>
         </div>
     </div>
     <div class="body-block" id ="portfolio">
-        <h2> Portfolio </h2>
+        <h2> Some of My Work </h2>
         <ul class="portfolio-list">
-            <li class="portfolio-block"> B1 </li>
+            <a href="#port1" rel="modal:open"><li class="portfolio-block"> B1 </li> </a>
             <li class="portfolio-block"> B2 </li>
             <li class="portfolio-block"> B3 </li>
             <li class="portfolio-block"> B4 </li>
@@ -91,14 +97,14 @@
         </ul>
     </div>
     <div class="body-block contact-block alt-block" id="contact">
-        <h2 style="margin-bottom:0"> Contact Me </h2>
-        <div class="col-md-2 col-md-offset-3">
-            <div>email</div>
-            <div>name </div>
-            <div>company </div>
+        <h2 style="margin-bottom:40px"> Contact Me </h2>
+        <div class="col-md-3 col-md-offset-2">
+            <input type="text" placeholder="Your Email" name="email" class="form-control"/>
+            <input type="text" placeholder="Your Name" name="name" class="form-control"/>
+            <input type="text" placeholder="Company name" name="company" class="form-control"/>
         </div>
-        <div class="col-md-5" style="height:200px; background-color:gray">
-            message
+        <div class="col-md-5" >
+            <input type="text" style="height:200px; width:100%" class="">
         </div>
     </div>
     <div class="footer">
@@ -107,7 +113,12 @@
         <a href="https://www.facebook.com/bombbomb45"><i style="padding-left:6px;" class="fa fa-facebook"></i></a>
         <a href="mailto:jdfrancis@smu.edu"><i class="fa fa-envelope"></i></a>
         <hr style="width:200px;">
-        <p> jdfrancis@smu.edu | 817-682-6693 </p>
+        <p><a style="color:#E0DFDF" href="mailto:jdfrancis@smu.edu"> jdfrancis@smu.edu </a> | 817-682-6693 </p>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div id="port1" class="portfolio-modal">
+        <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
     </div>
 
     <!-- Latest compiled and minified JavaScript -->
@@ -115,6 +126,8 @@
     <script src="js/jquery.easing.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Modals -->
+    <script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
     <!-- My JavaScript -->
     <script src="js/js.js"></script>
 </body>

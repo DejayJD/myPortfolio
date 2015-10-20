@@ -23,7 +23,9 @@ $(function(){
             "margin-left" : "-100px",
             "visibility" : "hidden",
             "opacity" : "0",
-            "z-index" : "-100"
+            "z-index" : "-100",
+            "font-size": "1pt",
+            "transition" : "all 0.4s, font-size 5s"
         });
         $(".fname").css({
             "background-color" : "#E46849",
@@ -42,7 +44,10 @@ $(function(){
             "visibility" : "visible",
             "margin-left" : "-15px",
             "opacity" : "1",
-            "z-index" : "-100"
+            "z-index" : "-100",
+            "width" : "auto",
+            "transition" : "all 0.4s, font-size 0s",
+            "font-size" : "34pt"
         });
         $(".fname").css({
             "background" : "none",
