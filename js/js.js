@@ -22,15 +22,25 @@ $(function(){
         $(".lname").css({
             "margin-left" : "-100px",
             "visibility" : "hidden",
+            "pointer-events" : "none",
             "opacity" : "0",
             "z-index" : "-100",
-            "font-size": "1pt",
-            "transition" : "all 0.4s, font-size 5s"
+            "transition" : "all 0.4s, font-size 10s",
+            "width" : "0px"
         });
         $(".fname").css({
             "background-color" : "#E46849",
             "z-index" : "100"
         });
+        if ($(window).scrollTop() > $(".animate1").scrollTop) {
+            $(".animate1").css({
+                "visibility" : "visible"
+            });   
+        }
+        else {
+                $(".animate1").css({
+                "visibility" : "hidden"
+        });}
     }
     else {
         $(".navbar").css({
@@ -52,8 +62,13 @@ $(function(){
         $(".fname").css({
             "background" : "none",
             "z-index" : "100"
-        });
+        }); 
     }
-    });
-    
+    }); 
 });
+
+//auto expand textarea
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
+}
