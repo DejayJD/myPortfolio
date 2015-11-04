@@ -1,0 +1,6 @@
+branches:
+  only:
+    - gh-pages
+install:
+ - "pip install html5validator"
+script: "html5validator"
