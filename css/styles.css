@@ -1,3 +1,4 @@
+
 html, body {
 	margin: 0 !important;
     padding: 0 !important;
@@ -129,8 +130,8 @@ a:hover, a:focus {
 	text-decoration:none;
 }
 .cta-block {
-	    display: block;
-    margin: auto;
+	display: block;
+    margin: 0 auto;
     width: 250px;
     height: 70px;
 }
@@ -151,9 +152,6 @@ a:hover, a:focus {
 	font-size:22pt;
 	-webkit-transition: all 0.3s;
     transition: all 0.3s;
-}
-.cta-button:hover {
-	background-color:#E46849;
 }
 .footer {
 	box-sizing:content-box;
@@ -208,21 +206,7 @@ h1 {
 	padding-top:20px; 
 	width:90%; 
 	margin:auto
-}
-
-.blue {
-	border-radius:60px;
-	width:256px;
-	height:70px;
-	line-height:62px;
-	border-color: #338BB7;
-	background-color:#338BB7;
-	color:white;
-}
-.blue:hover {
-	background-color:white;
-	color:#2B779C;
-}
+}	
 .portfolio-list {
 	padding:0;
 	margin:auto;
@@ -239,9 +223,10 @@ h1 {
 	transition-timing-function: ease-in;
 	transition: all 0.5s;
 	overflow:hidden;
+	cursor:pointer;
 }
 .portfolio-block:hover {
-	background-position: -125% 0;
+	background-position: -90px 0;
 }
 
 .portfolio-block:hover span {
@@ -261,11 +246,6 @@ h1 {
 	height:300px;
 	display:none;
 	margin:2%;
-}
-.centered-container {
-	width:100%;
-	height:100%;
-	margin:0 auto;
 }
 .contact-block {
 	clear:left;
@@ -318,12 +298,22 @@ body > nav > div.navbar-header > a {
 }
 
 /*Colors: */
-.orange {
+.cta-button:hover.orange-inverse, .orange {
 	background-color:#E46849;
 	color:white;
 }
-.blue {
+.cta-button:hover.orange, .orange-inverse {
+	color:#E46849;
+	background-color:white;
+}
+.cta-button:hover.blue-inverse, .blue {
+	border-color:white;
+	background-color:#338BB7;
 	color:white;
+}
+.cta-button:hover.blue, .blue-inverse {
+	color:#338BB7;
+	background-color:white;
 }
 .dark-gray {
 	color:white;
@@ -333,9 +323,22 @@ body > nav > div.navbar-header > a {
 	color:#2C2F35;
 }
 .green {
+	border-color:#4CBFA0;
 	background-color:#4CBFA0;
 	color:white;
 }
-.img1 {
+
+.cta-button:hover.green, .green-inverse {
+	background-color:white;
+	color:#44AB8F;
+}
+.b1 {
 	background-image: url("../img/roguelike1thumb.gif");
+}
+
+.animate1 {
+	transition-timing-function:linear;
+	transition: all 0.8s;
+	opacity:0;
+	transform: translateY(100%);
 }

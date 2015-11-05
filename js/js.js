@@ -32,15 +32,16 @@ $(function(){
             "background-color" : "#E46849",
             "z-index" : "100"
         });
-        if ($(window).scrollTop() > $(".animate1").scrollTop) {
-            $(".animate1").css({
-                "visibility" : "visible"
-            });   
-        }
-        else {
-                $(".animate1").css({
-                "visibility" : "hidden"
-        });}
+        myOffset = 25;
+        $(".animate1").each(function(){
+            if ($(window).scrollTop() > $(this).offset().top - $(window).height() - myOffset) {
+                $(this).css({
+                    "opacity" : "1",
+                    "transform" : "translateY(0%)"
+
+                });   
+            }
+        });
     }
     else {
         $(".navbar").css({
@@ -66,6 +67,7 @@ $(function(){
     }
     }); 
 });
+
 
 //auto expand textarea
 function adjust_textarea(h) {
