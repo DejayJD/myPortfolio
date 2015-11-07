@@ -59,7 +59,8 @@
         <div class="container">     
                 <i class="fa fa-user about-icon"> </i>
             <div class="about-block">
-                <p class="animate1"> Hi! <br> My name is John David Francis, but everyone calls me JD. </p>
+            <h2>Hi!</h2>
+                <p class="animate1"> My name is John David Francis, but everyone calls me JD. </p>
                 <p class="animate1"> I'm currently a third-year programming student studying Computer Science with a Game Development specialization at Southern Methodist University.</p>
                 <p class="animate1"> I am many things including: programming student, gaming fanatic, e-sports enthusiast, avid coffee drinker, but most importantly: <br> I love programming games and websites. </p>
                 <p class="animate1"> I have a strong passion for developing creative and entertaining games as well as developing the front-end for functional and aesthetic websites to provide good user experiences. </p>
@@ -70,17 +71,17 @@
     <div class="block-body green" id="block-skills">
         <h2 id="h2-skills"> Skills </h2>
         <div class="container">
-            <div class="col-md-4">
+            <div class="col-md-4 animate1">
                 <i class="fa fa-gamepad skill-icon"></i>
                 <h2> Game Development </h2>
                 <p> I develop games in C++, Python, Java, and other languages. </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 animate1">
                 <i class="fa fa-laptop skill-icon"></i>
                 <h2> Web Development </h2>
                 <p> I do UI and UX front-end development using technologies such as HTML5, CSS3, Javascript, JQuery, Bower, AngularJS, Bootstrap, and many others. </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 animate1">
                 <i class="fa fa-terminal skill-icon"></i>
                 <h2> Software Development </h2>
                 <p> I have extensive knowledge of multiple programming languages, object-oriented and modular programming, algorithms, Scrum-Agile development </p>
@@ -92,26 +93,53 @@
         <div class="container">
         <h2> Some of My Work </h2>
         <h4>  With links to the code for each </h4>
-            <div class="portfolio-block"><span class="green">Roguelike Project</span></div>
-            <div class="portfolio-block b1"> <span class="green"> C++ Roguelike Game </span> </div>
-            <div class="portfolio-block"> <span class="green"> Python Automated 2048 </span> </div>
-            <div class="portfolio-block"> <span class="green"> Processing Pokemon Battle Clone </span>  </div>
-            <div class="portfolio-block"> <span class="green"> Using A Genetic Algorithm for Network Routing </span> </div>
-            <div class="portfolio-block"> <span class="green"> My portfolio website </span> </div>
-            <div class="portfolio-block"> <span class="green"> Spots, a Web and Mobile Parking App </span></div>
-            <div class="portfolio-block"> <span class="green"> App-sassins, a Web and Mobile Assassins app </span></div>
-            <div class="portfolio-block"> <span class="green"> Templated website example </span> </div>
+            <div class="portfolio-block animate1">
+                <span class="portfolio-picture portfolio-pic1"></span>
+                <span class="sidebar green"><p> C++ Roguelike Game </p> </span>
+            </div>
+            <div class="portfolio-block animate1 b1"> 
+                <span class="portfolio-picture portfolio-pic2"></span> 
+                <span class="sidebar green"><p> --- need another one --- </p> </span> 
+            </div>
+            <div class="portfolio-block animate1"> 
+                <span class="portfolio-picture portfolio-pic3"></span> 
+                <span class="sidebar green"><p> Python AI 2048 </p></span> 
+            </div>
+            <div class="portfolio-block animate1"> 
+                <span class="portfolio-picture portfolio-pic4"></span>
+                <span class="sidebar green"><p> Processing Pokemon Battle Clone </p></span>  
+            </div>
+            <div class="portfolio-block animate1"> 
+                <span class="portfolio-picture portfolio-pic5"></span>
+                <span class="sidebar green"><p>A Genetic Algorithm for Network Routing</p> </span> 
+            </div>
+            <div class="portfolio-block animate1"> 
+                <span class="portfolio-picture portfolio-pic6"></span>
+                <span class="sidebar green"><p> My portfolio website </p></span> 
+            </div>
+            <div class="portfolio-block animate1">
+                <span class="portfolio-picture portfolio-pic7"></span> 
+                <span class="sidebar green"><p> Spots, a Web and Mobile App </p></span>
+            </div>
+            <div class="portfolio-block animate1"> 
+                <span class="portfolio-picture portfolio-pic8"></span>
+                <span class="sidebar green"><p> App-sassins, a Web and Mobile app </p></span>
+            </div>
+            <div class="portfolio-block animate1"> 
+                <span class="portfolio-picture portfolio-pic9"></span>
+                <span class="sidebar green"><p> Mustache Templated Website Example</p> </span> 
+            </div>
         </div>
     </div>
     <div class="block-body contact-block orange" id="contact">
         <h2 style="margin-bottom:40px"> Contact Me </h2>
         <div class="form-style-8">
-          <form>
-            <input type="text" name="field1" placeholder="Full Name" />
-            <input type="email" name="field2" placeholder="Email" />
-            <input type="url" name="field3" placeholder="Website" />
-            <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
-            <div class="cta-button orange">Send <i class="fa fa-paper-plane" style="padding-left:10px"></i></div>
+          <form method="post" action="contact.php">
+            <input type="text" placeholder="Name" name="name"/>
+            <input type="text" placeholder="Email" name="email"/>
+            <input type="text" placeholder="Company" name="company"  />
+            <textarea placeholder="Type your message here..." name="message" onkeyup="adjust_textarea(this)"></textarea>
+            <input type="submit" class="cta-button orange">Send <i class="fa fa-paper-plane send-icon"></i></input>
           </form>
         </div>
     </div>
