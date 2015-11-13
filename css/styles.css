@@ -175,11 +175,15 @@ a:hover, a:focus {
 	height:55px;
 	background-color:#BF4C2F;
 	margin: 0px 5px;
-	transition:all 0.5s;
+	transition-timing-function:ease-in;
+	transition:all 0.3s;
 }
 .footer i:hover {
 	color:white;
 	background-color:#EA6A4A;
+	    width: 60px;
+    height: 60px;
+    line-height: 1.2;
 }
 h1 {
 	font-family:"Montserrat";
@@ -207,9 +211,20 @@ h1 {
 	width:90%;
  	margin:auto
 }	
+#block-skills > div > div > h2 {
+	min-height:80px;
+}
 .portfolio-list {
 	padding:0;
 	margin:auto;
+}
+.portfolio-category {
+	background:blue;
+	color:white;
+	position:absolute;
+	top:0;
+	left:0;
+
 }
 .portfolio-block {
 	position:relative;
@@ -267,10 +282,15 @@ h1 {
     -webkit-transition: all 800ms cubic-bezier(0.215, 0.61, 0.355, 1);
   	transition:         all 800ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.portfolio-modal {
-	height:300px;
-	display:none;
-	margin:2%;
+.modal, .modal-body, .modal-content, .modal-dialog {
+	height:100%;
+	margin:0;
+	padding:0;
+	width:100%;
+	border:none;
+}
+.modal1 {
+	padding-right:0;
 }
 .contact-block {
 	clear:left;

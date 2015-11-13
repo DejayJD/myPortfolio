@@ -61,9 +61,12 @@
             <div class="about-block">
             <h2>Hi!</h2>
                 <p class="animate1"> My name is John David Francis, but everyone calls me JD. </p>
-                <p class="animate1"> I'm currently a third-year programming student studying Computer Science with a Game Development specialization at Southern Methodist University.</p>
-                <p class="animate1"> I am many things including: programming student, gaming fanatic, e-sports enthusiast, avid coffee drinker, but most importantly: <br> I love programming games and websites. </p>
-                <p class="animate1"> I have a strong passion for developing creative and entertaining games as well as developing the front-end for functional and aesthetic websites to provide good user experiences. </p>
+                <p class="animate1"> I'm currently a third-year programming student at Southern Methodist University studying Computer Science with a Game Development specialization.</p>
+                <p class="animate1"> I am many things including: programming student, gaming fanatic, self-proclaimed nerd, e-sports enthusiast, avid coffee drinker, but most importantly: <br> I love making games and websites. </p>
+                <p class="animate1"> I have a strong passion for developing creative and fun games as well as programming the front-end of functional and aesthetic websites to provide good user experiences. </p>
+                <p class="animate1"> Here are a few of my favorite games: DotA 2, Hearthstone, Rocket League, Heroes of the Storm, Starcraft 2, World of Warcraft, Counter Strike: Global Offensive, Bastion, The Elder Scrolls Series, Dark Souls, Fallout 3, and Pokemon Ruby, among many others
+                </ul> 
+                </p>
             </div>
             <a class="cta-block" href="#contact" style="margin-top:25px"><div class="cta-button green">Contact Me</div></a>
         </div>
@@ -93,8 +96,9 @@
         <div class="container">
         <h2> Some of My Work </h2>
         <h4>  With links to the code for each </h4>
-            <div class="portfolio-block animate1">
+            <div class="portfolio-block animate1" data-toggle="modal" data-target="#modal1">
                 <span class="portfolio-picture portfolio-pic1"></span>
+                <span class="portfolio-category">Game</span>
                 <span class="sidebar green"><p> C++ Roguelike Game </p> </span>
             </div>
             <div class="portfolio-block animate1 b1"> 
@@ -134,12 +138,12 @@
     <div class="block-body contact-block orange" id="contact">
         <h2 style="margin-bottom:40px"> Contact Me </h2>
         <div class="form-style-8">
-          <form method="post" action="contact.php">
+          <form>
             <input type="text" placeholder="Name" name="name"/>
             <input type="text" placeholder="Email" name="email"/>
             <input type="text" placeholder="Company" name="company"  />
             <textarea placeholder="Type your message here..." name="message" onkeyup="adjust_textarea(this)"></textarea>
-            <input type="submit" class="cta-button orange">Send <i class="fa fa-paper-plane send-icon"></i></input>
+            <div class="cta-button orange">Send <i class="fa fa-paper-plane send-icon"></i></div>
           </form>
         </div>
     </div>
@@ -159,4 +163,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- My JavaScript -->
     <script src="js/js.js"></script>
+
+
+<!-- Modals -->
+
+    <!-- Modal -->
+    <div id="modal1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- data-dismiss="modal" -->
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Project Status: Finished</p>
+            <p>Programming Language Used: C++ </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
 </body>
