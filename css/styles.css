@@ -48,7 +48,7 @@ html, body {
 	-webkit-transition: all 0.5s;
   	transition: all 0.5s;
 }
-.navbar-inverse .navbar-brand {
+.navbar .navbar-brand {
 	color:white;
 	font-family:"Montserrat";
 	font-size:34pt;
@@ -82,10 +82,12 @@ html, body {
     margin-right:0;
 	transition: all 0.3s;
 	z-index:2;
-
 }
-.navbar-inverse .navbar-nav>li>a {
+.navbar-nav>li>a {
 	color:white;	
+}
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+	background:none;	
 }
 .navlist{
 	font-family:"Montserrat";
@@ -123,8 +125,6 @@ html, body {
 h2 {
 	font-family:"Montserrat";
 	font-size:24pt;
-	margin-top:10px;
-	margin-bottom:20px;
 }
 a:hover, a:focus {
 	text-decoration:none;
@@ -180,10 +180,7 @@ a:hover, a:focus {
 }
 .footer i:hover {
 	color:white;
-	background-color:#EA6A4A;
-	    width: 60px;
-    height: 60px;
-    line-height: 1.2;
+	background-color:#EA7659;
 }
 h1 {
 	font-family:"Montserrat";
@@ -211,8 +208,19 @@ h1 {
 	width:90%;
  	margin:auto
 }	
-#block-skills > div > div > h2 {
+.about-block p {
+	margin-bottom:15px;
+}
+#block-skills > div > .col-md-4 > h2 {
 	min-height:80px;
+}
+#block-skills > .container > .col-md-12 > h2 {
+	margin-top:30px;
+}
+#block-skills > div > div > p {
+	font-size:13pt;
+	font-weight:500;
+	font-family:"Raleway";
 }
 .portfolio-list {
 	padding:0;
@@ -245,26 +253,27 @@ h1 {
 
 .portfolio-block:hover .sidebar {
 	visibility:visible;
-	transform: translateX(50%);
+	transform: translateX(25%);
 }
 .portfolio-block:hover .portfolio-picture {
 	overflow:hidden;
-	transform: translateX(-50%);
+	transform: translateX(-66.5%);
 }
 .portfolio-block .sidebar {
 	position:relative;
 	display:inline-block;
-	transform:translateX(150%);
-	width:50%;
+	transform:translateX(125%);
+	width:67%;
 	height:100%;
-	-webkit-transition: transform 800ms cubic-bezier(0.215, 0.61, 0.355, 1), background-color 400ms;
- 	transition:         transform 800ms cubic-bezier(0.215, 0.61, 0.355, 1), background-color 400ms;
+	-webkit-transition: transform 500ms ease-out, background-color 400ms;
+ 	transition:         transform 500ms ease-out, background-color 400ms;
 }
 .portfolio-block .sidebar:hover {
-	background-color:#2AA987;
+	background-color:#78D2B9;
 }
-.portfolio-block .sidebar p {
+.portfolio-block .sidebar span {
 	font: 14pt "Montserrat";
+	display:block;
 	position:absolute;
 	top:50%;
 	transform:translateY(-50%);
@@ -279,18 +288,59 @@ h1 {
     left: 0;
     overflow: hidden;
     top: 0;
-    -webkit-transition: all 800ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  	transition:         all 800ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transition: all 500ms ease-out;
+  	transition:         all 500ms ease-out;
 }
 .modal, .modal-body, .modal-content, .modal-dialog {
-	height:100%;
+	height:auto;
+	min-height:100%;
 	margin:0;
 	padding:0;
-	width:100%;
+	width:101%;
+	border:none;
+	border-radius:0;
+	-webkit-transition: all 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  	transition:         all 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.modal.fade .modal-dialog {
+	transform: translate(0%, 0%);
+}
+
+.modal.fade.in .modal-dialog {
+    opacity: 1;
+    background: white;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  	transition:         all 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.modal-content {
+	box-shadow:none;
+}
+.modal-body {
+	padding:7%;
+	padding-left:10%;
+	padding-right:10%;
+	text-align: center;
 	border:none;
 }
+
 .modal1 {
 	padding-right:0;
+}
+.modal-close {
+	font-family:"Open Sans";
+	line-height:1;
+	position:absolute;
+	top:0;
+	right:50px;
+	cursor:pointer;
+	font-size:50pt;
+	font-weight:50;
+
+}
+.modal-image {
+	width:100%;
 }
 .contact-block {
 	clear:left;
@@ -349,14 +399,19 @@ fieldset {
 }
 
 /* Colors: */
+/* Orange */
 .cta-button:hover.orange-inverse, .orange {
 	background-color:#E46849;
 	color:white;
+}
+.orange-border {
+	border-color:#E46849;
 }
 .cta-button:hover.orange, .orange-inverse {
 	color:#E46849;
 	background-color:white;
 }
+/* Blue */
 .cta-button:hover.blue-inverse, .blue {
 	border-color:white;
 	background-color:#338BB7;
@@ -366,23 +421,25 @@ fieldset {
 	color:#338BB7;
 	background-color:white;
 }
-.dark-gray {
-	color:white;
-}
+/* Gray */
 .light-gray {
 	background-color:#F4F4F4;
 	color:#2C2F35;
 }
+/* Green */
 .green {
-	border-color:#4CBFA0;
 	background-color:#4CBFA0;
 	color:white;
 }
-
 .cta-button:hover.green, .green-inverse {
 	background-color:white;
-	color:#44AB8F;
+	color:#4CBFA0;
 }
+.green-border {
+	border-color:#4CBFA0;
+}
+
+
 .portfolio-pic1 {
 	background-image: url("../img/roguelike1thumb.gif");
 }
@@ -391,7 +448,7 @@ fieldset {
 /* Animations */
 .animate1 {
 	-webkit-transition: all 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition:         all 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  	transition:         all 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
 	opacity:0;
 	transform: translateY(100%);
 }
