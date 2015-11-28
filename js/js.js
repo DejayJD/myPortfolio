@@ -72,6 +72,6 @@ $(function(){
 
 //auto expand textarea
 function adjust_textarea(h) {
-    h.style.height = "46px";
-    h.style.height = (h.scrollHeight)+"px";
+    h.style.height = "90px";
+    h.style.height = (h.scrollHeight)+10+"px";
 }

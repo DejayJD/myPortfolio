@@ -67,10 +67,9 @@
                 <p class="animate1"> While learning programming in classes, at times I felt too often like I was told to think too much inside the box, and I always wanted to find opportunities to employ my creative side. I have since found a real niche and outlet for my creativity through web development and game development. Both web and game development give me ample opportunities to be imaginative and use my functional skills to create amazing things.
                 <p class="animate1"> One of my main career focuses and a source of my pride is focusing on the user as the end goal from a programmatic perspective. I absolutely love creating things from the ground up that are fun, innovative and functional. I believe that the experience of a user/player isn't just determined by designers, but that it stems from the very code running in the backround up through the programmer into the designer and out to the user. </p>
                 <p class="animate1"> Here are a few of my favorite games: DotA 2, Hearthstone, Rocket League, Diablo Series, Heroes of the Storm, Counter Strike: Global Offensive, Starcraft 2, World of Warcraft, Bastion, The Elder Scrolls Series, Dark Souls, and Pokemon Ruby, among many others
-                </ul>
                 </p>
             </div>
-            <a class="cta-block animate1" href="#contact" style="margin-top:25px"><div class="cta-button green green-border">Contact Me <i class="fa fa-envelope"></i></div></a>
+            <a class="cta-button green green-border animate1" href="#contact">Contact Me <i class="fa fa-envelope"></i></a>
         </div>
     </div>
     <div class="block-body green" id="block-skills">
@@ -79,21 +78,21 @@
             <div class="col-md-4 animate1">
                 <i class="fa fa-gamepad skill-icon"></i>
                 <h2> Game Development </h2>
-                <p> I develop games using C++, Python, Java, and other languages with engines like Unity, PyGame, Processing, Gamemaker, as well as custom engines. </p>
+                <p> I develop games using C++, Python, Java, and other languages with engines like Unity, PyGame, Processing, Gamemaker, as well as custom engines. I'm very familiar with OOP and modular programming, as well as good memory management. </p>
             </div>
             <div class="col-md-4 animate1">
                 <i class="fa fa-laptop skill-icon"></i>
                 <h2> Web Development </h2>
-                <p> I develop User Interfaces (UI) and general front-end sides of both static and dynamic websites using technologies such as HTML5, CSS3, Javascript, JQuery, Bower, AngularJS, Bootstrap, and many others. </p>
+                <p> I develop User Interfaces (UI) and general front-end for both static and dynamic websites using tools and languages such as HTML5, CSS3, Javascript, JQuery, Bower, Mustache, AngularJS, Bootstrap, and others. I also am very familiar with working with RESTful API's (as well as creating them). </p>
             </div>
             <div class="col-md-4 animate1">
                 <i class="fa fa-terminal skill-icon"></i>
                 <h2> Software Development </h2>
-                <p> I have extensive knowledge of object-oriented and modular programming, algorithm, and scrum-agile development methodology. Plus, I have experience using these in multiple different scripting and compiled languages. </p>
+                <p> I have extensive knowledge of object-oriented and modular programming, algorithms, memory management, and scrum-agile development methodology. Plus, I have experience using these in multiple different scripting and compiled languages. I also have a wealth of experience using Git for both Atlassian Stash and GitHub.</p>
             </div>
             <div class="col-md-12 animate1">
-                <h2> Want to see more? </h2>
-                <a class="cta-button green" href="John_Francis_Resume.pdf" download> Resume <i class="fa fa-download"></i> </a>
+                <h2> Want to see more?</h2>
+                <a class="cta-button green" href="John_Francis_Resume.pdf" download> My Resume <i class="fa fa-download"></i> </a>
             </div>
 
         </div>
@@ -102,57 +101,26 @@
         <div class="container">
         <h2> Some of My Work </h2>
         <h4>  With links to the code for each </h4>
-            <div class="portfolio-block animate1" data-toggle="modal" data-target="#modal1">
-                <span class="portfolio-picture portfolio-pic1"></span>
-                <span class="portfolio-category">Game</span>
-                <span class="sidebar green"><span> C++ Roguelike Game </span> </span>
-            </div>
-            <div class="portfolio-block animate1 b1"> 
-                <span class="portfolio-picture portfolio-pic2"></span> 
-                <span class="sidebar green"><span> --- need another one --- </span> </span> 
-            </div>
-            <div class="portfolio-block animate1"> 
-                <span class="portfolio-picture portfolio-pic3"></span> 
-                <span class="sidebar green"><span> Python AI 2048 </span></span> 
-            </div>
-            <div class="portfolio-block animate1"> 
-                <span class="portfolio-picture portfolio-pic4"></span>
-                <span class="sidebar green"><span> Processing Pokemon Battle Clone </span>  
-            </div>
-            <div class="portfolio-block animate1"> 
-                <span class="portfolio-picture portfolio-pic5"></span>
-                <span class="sidebar green"><span>A Genetic Algorithm for Network Routing</span> 
-            </div>
-            <div class="portfolio-block animate1"> 
-                <span class="portfolio-picture portfolio-pic6"></span>
-                <span class="sidebar green"><span> My portfolio website </span> 
-            </div>
-            <div class="portfolio-block animate1">
-                <span class="portfolio-picture portfolio-pic7"></span> 
-                <span class="sidebar green"><span> Spots, a Web and Mobile App </span>
-            </div>
-            <div class="portfolio-block animate1"> 
-                <span class="portfolio-picture portfolio-pic8"></span>
-                <span class="sidebar green"><span> App-sassins, a Web and Mobile app </span>
-            </div>
-            <div class="portfolio-block animate1"> 
-                <span class="portfolio-picture portfolio-pic9"></span>
-                <span class="sidebar green"><span> Mustache Templated Website Example</span> 
-            </div>
+            <div id="portfolio-block-template"></div>
+            <div id="portfolio-modal-template"></div>
         </div>
     </div>
+
     <div class="block-body contact-block orange" id="contact">
         <h2 style="margin-bottom:40px"> Contact Me </h2>
         <div class="form-style-8">
-          <form>
+          <form action="//formspree.io/jdfrancis@smu.edu" method="POST">
             <input type="text" placeholder="Name" name="name"/>
-            <input type="text" placeholder="Email" name="email"/>
-            <input type="text" placeholder="Company" name="company"  />
+            <input type="text" placeholder="Email" name="_replyto"/>
+            <input type="text" placeholder="Subject" name="_subject"/>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="//site.io/thanks.html" />
             <textarea placeholder="Type your message here..." name="message" onkeyup="adjust_textarea(this)"></textarea>
-            <div class="cta-button orange">Send <i class="fa fa-paper-plane send-icon"></i></div>
+            <button class="cta-button orange" type="submit">Send <i class="fa fa-paper-plane send-icon"></i></button>
           </form>
         </div>
     </div>
+
     <div class="footer">
         <a href="https://github.com/DejayJD"><i class="fa fa-github"></i></a>
         <a href="https://www.linkedin.com/in/johndfrancis"><i class="fa fa-linkedin"></i></a>
@@ -167,35 +135,12 @@
     <script src="js/jquery.easing.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Mustache -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <!-- Templates-->
+    <script src="js/modal-template.js"></script>
     <!-- My JavaScript -->
     <script src="js/js.js"></script>
 
-
-<!-- Modals -->
-
-    <!-- Modal -->
-    <div id="modal1" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <!-- data-dismiss="modal" -->
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="container">
-                <div class="col-md-6">
-                    <img src="img/roguelike1.gif"/ class="modal-image">
-                </div>
-                <div class="col-md-6">
-                    <h3>Roguelike Video Game </h3>
-                    <h3>Project Status: Finished</h3>
-                    <h3>Programming Language Used: C++ </h3>
-                </div>
-                <div class="col-md-12">
-                    <p> Lorem Ipsum </p>
-            </div>
-          </div>
-          <div class="modal-close close" data-dismiss="modal">X</div>
-        </div>
-      </div>
-    </div>
 
 </body>
