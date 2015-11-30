@@ -44,7 +44,7 @@
             "language": "PHP, SQL",
             "tools": "Vagrant, LAMP stack, Apiary, Ajax, MySQL Workbench, Postman, Facebook API, Sendgrid API",
             "date": "Spring 2015",
-            "description": "Appsassins is a more seamless and streamlined way to play the classic game Assassins. The app makes it easier than ever to start and play a game of Assassins with your friends. The app manages assigning targets, confirming targets and more. Rather than having to constantly use other social media intended for other purposes to manage Assassins, we combined it all into one app. You can also view the progress of your games at any time on a visual map overlay. This project was definitely one of my most fun websites to date. Not only is it focused on a game, but I was charged with creating the backend, rather than the front end that I usually make."
+            "description": 'Appsassins is a more seamless and streamlined way to play the classic game "Assassins." The app makes it easier than ever to start and play a game of Assassins with your friends. The app manages assigning targets, confirming targets and more. Rather than having to constantly use other social media intended for other purposes to manage Assassins, we combined it all into one app. You can also view the progress of your games at any time on a visual map overlay. This project was definitely one of my most fun websites to date. Not only is it focused on a game, but I was charged with creating the backend, rather than the front end that I usually make.'
         },
         {
             "id": "5",
@@ -86,7 +86,7 @@
             "title": "XML Parsing/Searching Engine",
             "status": "Finished",
             "language": "Java/Processing",
-            "tools": "Bulbapedia for finding original algorithms",
+            "tools": "Bulbapedia",
             "date": "Fall 2013",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }

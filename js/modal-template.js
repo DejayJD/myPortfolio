@@ -13,8 +13,9 @@ $(function(){
                 $(this).find(".portfolio-picture").css({
                     "background-image": "url('../img/" + image + "thumb.gif')"
                 });
+
                 $(this).click(function() {
-                    $.get('../templates/portfolio-modal.mst', function(template) {
+                    $.get('/templates/portfolio-modal.mst', function(template) {
                         var rendered = Mustache.render(template,idData);
                         $('#portfolio-modal-template').html(rendered);
                         $("#modal"+id).modal('show');

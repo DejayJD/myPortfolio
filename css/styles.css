@@ -227,10 +227,6 @@ h1 {
 	padding:0;
 	margin:auto;
 }
-.portfolio-category {
-	
-}
-	
 	
 /*.portfolio-category .content:before {
 	display: inline-block;
@@ -264,6 +260,7 @@ h1 {
 	width: 100%;
     position: relative;
     height: 100%;
+    display:inline-block;
     overflow: hidden;
 }
 .portfolio-block span img {
