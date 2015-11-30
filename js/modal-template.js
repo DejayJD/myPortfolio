@@ -10,9 +10,8 @@ $(function(){
 
                 var image = idData["img"];
                 var imgNum = idData["imgnum"];
-                var randImg = Math.floor((Math.random()*imgNum)+1);
-                $(this).children(".portfolio-picture").css({
-                    "background-image": "url('../img/" + image + randImg + "thumb.gif')"
+                $(this).find(".portfolio-picture").css({
+                    "background-image": "url('../img/" + image + "thumb.gif')"
                 });
                 $(this).click(function() {
                     $.get('../templates/portfolio-modal.mst', function(template) {

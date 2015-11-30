@@ -1,7 +1,9 @@
 {{#blocks}}
 <div class="portfolio-block animate1" id="{{id}}">
-	<span class="portfolio-picture"></span>
-    <span class="portfolio-category">{{type}}</span>
-    <span class="sidebar green"><span>{{title}} </span> </span>
+	<span class="portfolio-category">d</span>
+	<div class="inner-container">
+		<span class="portfolio-picture"></span>
+	    <span class="sidebar green"><span>{{title}} </span> </span>
+	</div>
 </div>
 {{/blocks}}

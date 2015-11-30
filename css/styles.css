@@ -204,7 +204,7 @@ h1 {
 }
 .about-block {
 	font-family: "Montserrat";
-	font-size:15pt;
+	font-size:14pt;
 	padding-top:20px; 
 	width:90%;
  	margin:auto
@@ -228,13 +228,27 @@ h1 {
 	margin:auto;
 }
 .portfolio-category {
-	background:blue;
-	color:white;
-	position:absolute;
-	top:0;
-	left:0;
-
+	
 }
+	
+	
+/*.portfolio-category .content:before {
+	display: inline-block;
+		content:"";
+		bottom:-.5em;
+		position:absolute;
+		display:block;
+		border-style:solid;
+		border-color: #0675b3 transparent transparent transparent;
+		z-index:-1;
+	}
+	
+.portfolio-category .content:before {
+	  left: 0;
+	  border-width: .5em 0 0 .5em;
+	}
+*/
+
 .portfolio-block {
 	position:relative;
 	background-color:gray;
@@ -244,8 +258,13 @@ h1 {
 	margin:1%;
 	transition-timing-function: ease-in;
 	transition: all 0.5s;
-	overflow:hidden;
 	cursor:pointer;
+}
+.portfolio-block > .inner-container {
+	width: 100%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
 }
 .portfolio-block span img {
 	background-size:cover;
@@ -438,7 +457,7 @@ fieldset {
 }
 .cta-button:hover.green, .green-inverse {
 	background-color:white;
-	color:#4CBFA0;
+	color:#3DAB8D;
 }
 .green-border {
 	border-color:#4CBFA0;

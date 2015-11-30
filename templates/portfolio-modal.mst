@@ -8,10 +8,21 @@
                         <img alt="" src="img/{{img}}" class="modal-image"/>
                     </div>
                     <div class="col-md-6">
-                        <h3>{{title}}</h3>
-                        <h3>Project Status: {{status}}</h3>
-                        <h3>Programming Language Used: {{language}} </h3>
-                        <h3>Date: {{date}} </h3>
+                        <table class="table">
+                            <h3>{{title}}</h3>
+                            <tr><h3>
+                                <td>Project Status:</td>
+                                <td>{{status}}</td>
+                            </h3></tr>
+                            <tr><h3>
+                                <td> Programming Language Used: </td>
+                                <td> {{language}}</td>
+                            </h3></tr>
+                            <tr><h3>
+                                <td>Date:</td>
+                                <td> {{date}}</td>
+                            </h3></tr>
+                        </table>
                     </div>
                     <div class="col-md-12">
                         <p> {{description}} </p>
