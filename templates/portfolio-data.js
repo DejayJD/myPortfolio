@@ -17,18 +17,18 @@
             "img": "2048",
             "type": "Game",
             "title": "2048 AI",
-            "status": "Finished",
+            "status": "In Progress",
             "language": "Python",
             "tools": "PyGame",
             "date": "Fall 2015",
-            "description": "For this project I created a 2048 game clone in Python, and then made an AI to play it. To make the AI I used a Min-Max tree to calculate moves using a heuristic function. For heuristics I assigned points for the highest number tile and the number of empty spaces."
+            "description": "For this project I created a 2048 game clone in Python, and then made an AI to play it. To make the AI I used a Min-Max tree to calculate moves using a heuristic function. For heuristics I assigned points for the highest number tile and the number of empty spaces. This project is still in development and needs a lot more work to run efficiently and "
         },
         {
             "id": "3",
             "img": "garouting",
             "type": "Software",
             "title": "Using Genetic Algorithms for Network Routing",
-            "status": "In Progress",
+            "status": "Finished",
             "language": "Python",
             "tools": "",
             "date": "Spring 2015",
@@ -44,7 +44,7 @@
             "language": "PHP, SQL",
             "tools": "Vagrant, LAMP stack, Apiary, Ajax, MySQL Workbench, Postman, Facebook API, Sendgrid API",
             "date": "Spring 2015",
-            "description": "Appsassins is a more seamless and streamlined way to play the classic game Assassins. The app makes it easier than ever to start and play a game of Assassins with your friends. The app manages assigning targets, confirming targets and more. Rather than having to constantly use other social media intended for other purposes to manage Assassins, we combined it all into one app. You can also view the progress of your games at any time on a visual map overlay. This project was definitely one of my most fun websites to date. Not only is it focused on a game, but I was charged with creating the backend, rather than the front end that I usually make."
+            "description": "Appsassins is a more seamless and streamlined way to play the classic game Assassins. The app makes it easier than ever to start and play a game of Assassins with your friends. The app manages assigning targets, confirming targets and more. Rather than having to constantly use other social media intended for other purposes to manage Assassins, we combined it all into one app. You can also view the progress of your games at any time on a visual map overlay. This project was definitely one of my most fun websites to make. Not only was it focused on a game, but I was charged with creating the backend, rather than the front end that I usually make."
         },
         {
             "id": "5",

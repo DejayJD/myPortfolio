@@ -1,9 +1,42 @@
 <div id="modal{{id}}" class="modal fade" role="dialog">
     <div class="modal-dialog">
+        <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-body">
                 <div class="container">
-                   
+                    <div class="col-md-12">
+                        <div class="col-md-7">
+                            <div class="modal-image-wrapper">
+                                <img alt="" src="../img/{{img}}1.gif" class="modal-image"/>
+                            </div>
+                        </div>
+                        <div class="col-md-5 h-100">
+                            <div class="auto">
+                            <h2>{{title}}</h2>
+                                <table class="table">
+                                    <tr>
+                                        <td>Project Status:</td>
+                                        <td><b>{{status}}</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td> Programming Language Used: </td>
+                                        <td> <b>{{language}}</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date:</td>
+                                        <td> <b>{{date}}</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Links:</td>
+                                        <td> (link)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="modal-description"> {{description}} </p>
+                    </div>
                 </div>
             <div class="modal-close close" data-dismiss="modal">X</div>
             </div>
