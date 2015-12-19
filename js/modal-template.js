@@ -10,9 +10,7 @@ $(function(){
 
                 var image = idData["img"];
                 var imgNum = idData["imgnum"];
-                $(this).find(".portfolio-picture").css({
-                    "background-image": "url('../img/" + image + "thumb.gif')"
-                });
+                
 
                 $(this).click(function() {
                     $.get('/templates/portfolio-modal.mst', function(template) {

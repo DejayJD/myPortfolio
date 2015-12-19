@@ -5,7 +5,7 @@
             "img": "roguelike",
             "imgnum": "3",
             "type": "Game",
-            "title": "Dungeonlike",
+            "title": "Dungeonlike - a tile-based roguelike game",
             "status": "Finished",
             "language": "C++",
             "tools": "Visual Studios, Simple OpenGL/SDL Tile Rendering Engine, Sloppy Code Checker",
@@ -14,25 +14,33 @@
         },
         {
             "id": "2",
-            "img": "2048",
+            "img": "2048game",
             "type": "Game",
-            "title": "2048 AI",
+            "title": "2048 Minimax AI",
             "status": "In Progress",
             "language": "Python",
             "tools": "PyGame",
             "date": "Fall 2015",
-            "description": "For this project I created a 2048 game clone in Python, and then made an AI to play it. To make the AI I used a Min-Max tree to calculate moves using a heuristic function. For heuristics I assigned points for the highest number tile and the number of empty spaces. This project is still in development and needs a lot more work to run efficiently and "
+            "links": [ 
+                {"type":"github", "href":"https://github.com/DejayJD/Python_2048_AI"}
+            ],
+            "description": "For this project I created a 2048 game clone in Python, and then made an AI to play it. To make the AI I used a Min-Max tree with Alpha-Beta Tree Pruning to calculate moves using a heuristic function that I made. For heuristics I assigned points for the highest number tile and the number of empty spaces. This project is still in development and I am continuing to work on it to make it run more efficiently."
         },
         {
             "id": "3",
             "img": "garouting",
-            "type": "Software",
-            "title": "Using Genetic Algorithms for Network Routing",
+            "type": "Paper/Software",
+            "title": "Partitioning Networks using Genetic Algorithms",
             "status": "Finished",
             "language": "Python",
             "tools": "",
             "date": "Spring 2015",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "links":[
+                {"type": "web", "href": "https://www.overleaf.com/read/qtwbwwrctfqs"},
+                {"type": "pdf", "href":"downloads/router-partitioning-genetic.pdf"},
+                {"type": "github", "href": "https://github.com/DejayJD/CSE4344"}
+            ],
+            "description": "Paper Abstract: In this paper we divised partitions of a network using a genetic algorithm (GA) in order to minimize the mean global slowdown of packet flows throughout the network. Network performance has increasingly become a very integral portion of the quality of services provided over the Internet. Our proposed solution to achieving application-specific performance constraints is to partition networks according to the lengths of packet flows serviced at each routing device. We achieved these network partitions using a genetic algorithm implemented in Python. We compared the global mean slowdown of network performance for both unpartitioned networks alongside partitioned networks that were partitioned using our genetic algorithm and we found that networks partitioned with our genetic algorithm reduce the global mean slowdown of network performance with a variety of different packet distributions. We created a simulation in Python and the results show that partitioned networks have the potential to reduce the slowdown of network performance for well-defined packet distributions."
         },
         {
             "id": "4",
@@ -42,7 +50,7 @@
             "title": "Appsassins: The Mobile and Web Assassins App",
             "status": "In Progress",
             "language": "PHP, SQL",
-            "tools": "Vagrant, LAMP stack, Apiary, Ajax, MySQL Workbench, Postman, Facebook API, Sendgrid API",
+            "tools": "Vagrant, VirtualBox, LAMP stack, Apiary, Ajax, MySQL Workbench, Postman, Facebook API, Sendgrid API",
             "date": "Spring 2015",
             "description": "Appsassins is a more seamless and streamlined way to play the classic game Assassins. The app makes it easier than ever to start and play a game of Assassins with your friends. The app manages assigning targets, confirming targets and more. Rather than having to constantly use other social media intended for other purposes to manage Assassins, we combined it all into one app. You can also view the progress of your games at any time on a visual map overlay. This project was definitely one of my most fun websites to make. Not only was it focused on a game, but I was charged with creating the backend, rather than the front end that I usually make."
         },
@@ -53,7 +61,7 @@
             "title": "Spots: the online parking app",
             "status": "Finished",
             "language": "HTML, CSS, Javascript",
-            "tools": "JQuery, AJAX, AngularJS, Bootstrap",
+            "tools": "Vagrant, VirtualBox, LAMP Stack, JQuery, AJAX, AngularJS, Bootstrap, OpenStreetMaps API",
             "date": "Fall 2015",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
@@ -61,12 +69,12 @@
             "id": "6",
             "img": "portfolio",
             "type": "Web",
-            "title": "My Portfolio Site",
+            "title": "My Portfolio Website",
             "status": "Finished",
             "language": "HTML, CSS, Javascript",
-            "tools": "JQuery, Mustache, Bootstrap",
+            "tools": "JQuery, Mustache, Bootstrap, Formspree",
             "date": "Fall 2015",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "description": "You're here right now! For this project I decided to try doing a lot of things by hand instead of using a pre-built tool to see what I could accomplish. I also  "
         },
         {
             "id": "7",
@@ -89,6 +97,7 @@
             "tools": "Bulbapedia for finding original algorithms",
             "date": "Fall 2013",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            
         }
     ]
 }
