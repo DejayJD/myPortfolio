@@ -13,6 +13,7 @@ $(function(){
                 
 
                 $(this).click(function() {
+                    $('#portfolio-block-template').css({"margin-right":"20px;"});
                     $.get('/templates/portfolio-modal.mst', function(template) {
                         var rendered = Mustache.render(template,idData);
                         $('#portfolio-modal-template').html(rendered);

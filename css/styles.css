@@ -276,8 +276,8 @@ h1 {
 .portfolio-block .sidebar {
 	position:relative;
 	display:inline-block;
-	transform:translateX(125%);
-	width:67%;
+	transform:translateX(124%);
+	width:68%;
 	height:100%;
 	-webkit-transition: transform 500ms ease-out, background-color 400ms;
  	transition:         transform 500ms ease-out, background-color 400ms;
@@ -349,13 +349,17 @@ h1 {
 	text-align: center;
 	border:none;
 }
-.close {
+.modal-close {
 	position:absolute;
 	top:5px;
 	right:50px;
 	cursor:pointer;
 	font-size:65pt;
 	color:#3B3F48;
+	transition:opacity 300ms;
+}
+.modal-close:hover {
+	opacity:0.5;
 }
 
 .modal-image-wrapper {
@@ -385,6 +389,14 @@ h1 {
 	padding-top:50px;
 	font-weight:500;
 	font-size:13pt;
+}
+.modal-link-icon {
+	font-size:32pt;
+	color: #3B3F48;
+	transition: color 200ms;
+}
+.modal-link-icon:hover {
+	color: #737A8A;
 }
 .contact-block {
 	clear:left;
