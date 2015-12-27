@@ -85,7 +85,7 @@
             "links": [
                 {"icon":"code", "href":"https://github.com/DejayJD/myPortfolio"}
             ],
-            "description": "You're here right now! For this project I decided to try doing a lot of things by hand instead of using frameworks to see what I could accomplish. I used "
+            "description": " "
         },
         {
             "id": "7",
