@@ -55,7 +55,8 @@
             "tools": "Vagrant, VirtualBox, LAMP stack, Apiary, Ajax, MySQL Workbench, Postman, Facebook API, Sendgrid API",
             "date": "Spring 2015",
             "links":[
-                {"icon":"code", "href":"https://www.dropbox.com/sh/br9r2vulda3h4b7/AAD1yZnfGmknCqPMHTCiQie6a?dl=0"}
+                {"icon":"code", "href":"https://www.dropbox.com/sh/br9r2vulda3h4b7/AAD1yZnfGmknCqPMHTCiQie6a?dl=0"},
+                {"icon":"external-link", "href":"http://54.149.40.71/appsassins/"}
             ],
             "description": "Appsassins is a more seamless and streamlined way to play the classic game Assassins. The app makes it easier than ever to start and play a game of Assassins with your friends. The app manages assigning targets, confirming targets and more. Rather than having to constantly use other social media intended for other purposes to manage Assassins, we combined it all into one app. You can also view the progress of your games at any time on a visual map overlay. This project was definitely one of my most fun websites to make. Not only was it focused on a game, but I was charged with creating the backend, rather than the front end that I usually make."
         },
@@ -69,7 +70,8 @@
             "tools": "Vagrant, VirtualBox, LAMP Stack, JQuery, AJAX, AngularJS, Bootstrap, OpenStreetMaps API",
             "date": "Fall 2015",
             "links":[
-                {"icon":"code", "href":"https://github.com/SpotsTeam/SPOTS/tree/master"}
+                {"icon":"code", "href":"https://github.com/SpotsTeam/SPOTS/tree/master"},
+                {"icon":"external-link", "href":"http://54.68.99.141/SPOTS/"}
             ],
             "description": "Have you ever attended an event (football game, concert, festival) and tried to avoid high parking prices by parking in residential or commercial lots for sale near the event location? If this is you, then Spots is the app you need to pursue. Spots is a web and mobile app that will help you to find a parking spot at any event in your area. Spots does this through the help of you, the user. As the user of this app, you can register as both a homeowner and a driver. As a homeowner, you indicate how many spots you have available in your lot. This information is readily available to users if they search for an event in your area. As a driver, you register your car and you can reserves spots at a lot before the game as well as pull up the app on game day to find which homes have parking spaces available."
         },
