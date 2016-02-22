@@ -207,6 +207,10 @@ a:focus {
 .double-cta-button-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+.double-cta-button-container > .cta-button {
+    margin: 2vw;
 }
 .footer {
     box-sizing: content-box;
@@ -656,6 +660,12 @@ i {
         width: 30vw;
         height: 23vw;
         margin: 2%;
+    }
+    .double-cta-button-container {
+        flex-direction: column;
+    }
+    .double-cta-button-container > .cta-button {
+        margin: 1vw auto;
     }
 }
 
