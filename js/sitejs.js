@@ -36,9 +36,11 @@ function scrollEffects() {
             "background-color": "#E46849",
             "z-index": "100"
         });
-        myOffset = 100;
+        myOffset = 150;
         $(".animate1").each(function() {
-            if ($(window).scrollTop() > $(this).offset().top - $(window).height() - myOffset && $(window).scrollTop() < $(this).offset().top) {
+            if ($(window).scrollTop() > $(this).offset().top - $(this).height() - $(window).height() + myOffset && $(window).scrollTop() < $(this).offset().top - $(this).height()) {
+                console.log($(this).offset().top);
+                console.log($(this).offset().bottom);
                 $(this).css({
                     "opacity": "1",
                     "transform": "translateY(0%)"
