@@ -186,11 +186,12 @@ a:focus {
     border: solid white 4px;
     min-width: 250px;
     max-width: 300px;
+    padding-left: 25px;
+    padding-right: 25px;
     width: auto;
-    padding-left: 30px;
-    padding-right: 30px;
     height: 70px;
     color: white;
+    text-align:center;
     font-family: "Montserrat";
     font-weight: 400;
     letter-spacing: 1px;
@@ -199,7 +200,14 @@ a:focus {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
-
+.cta-button:focus {
+    color:white;
+    outline:none;
+}
+.double-cta-button-container {
+    display: flex;
+    flex-direction: row;
+}
 .footer {
     box-sizing: content-box;
     height: 100%;
@@ -557,7 +565,9 @@ i {
     color: #338BB7;
     background-color: white;
 }
-
+.blue-border {
+    border-color: #338BB7;
+}
 
 /* Gray */
 
