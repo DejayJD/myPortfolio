@@ -39,8 +39,6 @@ function scrollEffects() {
         myOffset = 150;
         $(".animate1").each(function() {
             if ($(window).scrollTop() > $(this).offset().top - $(this).height() - $(window).height() + myOffset && $(window).scrollTop() < $(this).offset().top - $(this).height()) {
-                console.log($(this).offset().top);
-                console.log($(this).offset().bottom);
                 $(this).css({
                     "opacity": "1",
                     "transform": "translateY(0%)"
@@ -76,4 +74,8 @@ function scrollEffects() {
 function adjust_textarea(h) {
     h.style.height = "90px";
     h.style.height = (h.scrollHeight) + 10 + "px";
+}
+
+function filterList(type) {
+    console.log("Oh yeah, I bet that button felt good");
 }

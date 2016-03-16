@@ -10,7 +10,6 @@ $(function(){
 
                 var image = idData["img"];
                 var imgNum = idData["imgnum"];
-                
 
                 $(this).click(function() {
                     $('#portfolio-block-template').css({"margin-right":"20px;"});

@@ -1,9 +1,11 @@
+
 html,
 body {
     margin: 0 !important;
     padding: 0 !important;
     width: 100%;
     color: #3B3F48;
+    -webkit-backface-visibility: hidden;
 }
 
 .absoluteCenter {
@@ -88,6 +90,7 @@ body {
 
 /* Navbar style */
 
+
 .navbar {
     margin: 0;
     padding: 25px 35px 0 0;
@@ -155,6 +158,15 @@ body {
     right: 0;
 }
 
+
+
+/* Text and Buttons */
+
+
+.line-style {
+    width:150px; 
+    border-width: 3px;
+}
 .header {
     color: white;
     font-weight: 700;
@@ -212,6 +224,11 @@ a:focus {
 .double-cta-button-container > .cta-button {
     margin: 2vw;
 }
+
+
+/* Footer */
+
+
 .footer {
     box-sizing: content-box;
     height: 100%;
@@ -253,6 +270,12 @@ h1 {
 #top > div> h1 {
     font-size: 42pt;
 }
+
+
+
+/* Big Section Blocks */
+
+
 .about-icon {
     overflow:hidden;
     position:relative;
@@ -291,6 +314,37 @@ h1 {
     font-size: 13pt;
     font-weight: 500;
     font-family: "Raleway";
+}
+
+
+
+/* Portfolio List Blocks */
+#portfolio > h4 > a > i {
+    font-size:26pt;
+}
+
+.filter-wrapper {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.filter-wrapper > ul {
+    padding:0;
+}
+.filter-wrapper > ul > li {
+    list-style: none;
+    display:inline-block;
+    font-family:"Montserrat";
+    width:95px;
+    height:30px;
+    padding-left:4px;
+    margin-right:4px;
+    border-radius:30px;
+    line-height:1.85;
+    font-size:12pt;
+    cursor: pointer;
 }
 
 #portfolio-block-template {
@@ -377,6 +431,10 @@ h1 {
     height: 100%;
 }
 
+
+
+/* Portoflio Modals */
+
 .modal,
 .modal-body,
 .modal-content,
@@ -414,7 +472,7 @@ h1 {
 }
 
 .modal-body {
-    padding: 7%;
+    padding: 4%;
     padding-left: 18%;
     padding-right: 18%;
     text-align: center;
@@ -440,7 +498,7 @@ h1 {
     width: 100%;
     position: relative;
     height: 0;
-    padding: 80% 0 0 0;
+    padding: 60% 0 0 0;
     overflow: hidden;
 }
 
@@ -535,6 +593,8 @@ i {
 }
 
 
+
+
 /* Colors: */
 /* Orange */
 
@@ -586,6 +646,7 @@ i {
 .green {
     background-color: #4CBFA0;
     color: white;
+    transition:all 0.3s;
 }
 
 .cta-button:hover.green,
@@ -648,7 +709,7 @@ i {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 870px) {
     .navbar {
         padding-right: 0;
     }

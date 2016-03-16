@@ -5,9 +5,9 @@
             "img": "appsassins",
             "imgnum": "1",
             "type": "Web",
-            "title": "Appsassins: The Mobile and Web Assassins App",
-            "status": "In Progress",
-            "language": "PHP, SQL",
+            "title": "Appsassins: The Mobile and Web Assassins Game",
+            "status": "Finished",
+            "language": "PHP, SQL, Slim",
             "tools": "Vagrant, VirtualBox, LAMP stack, Apiary, Ajax, MySQL Workbench, Postman, Facebook API, Sendgrid API",
             "date": "Spring 2015",
             "links":[
@@ -43,10 +43,24 @@
             "links": [
                 {"icon":"code", "href":"https://github.com/DejayJD/myPortfolio"}
             ],
-            "description": " "
+            "description": "You're here right now! You might be wondering why I put this here, the main reason is so that you can see the code. For this website, the challenge was creating an entirely static website that loads quickly, and best presents all of my work."
         },
         {
             "id": "4",
+            "img": "gem",
+            "type": "Web",
+            "title": "GEM: the web application to manage all of your group events",
+            "status": "In progress - early stages",
+            "language": "HTML, CSS, Javascript, Jquery/AJAX, Angular 2",
+            "tools": "Apiary, Jira, Git/GitHub",
+            "date": "Spring 2016",
+            "links": [
+                {"icon":"code", "href":"https://github.com/DJ2Studios/GEM"}
+            ],
+            "description": "GEM is the revolutionary 'Group Event Manager' web application that will supercharge all of your friendly gatherings. It provides you with a turn-key solution to your own custom calendar, easy visualizations of different available events and times, a date/time polling feature allowing all audiences to get involved on finding the best times, and a comment section for improved communication and integration. Gone are the days of one person trying to get people together and having to jump through hoops just to organize your friends. All of your scheduling and communication applications have hyperconverged to create GEM, your schedule's new best friend."
+        },
+        {
+            "id": "5",
             "img": "roguelike",
             "imgnum": "3",
             "type": "Game",
@@ -61,11 +75,11 @@
             "description": "This game is a tile-based roguelike made in C++ in Visual Studios 2013 using a simple tile rendering engine and creating everything else from scratch. I learned a lot about how to build a game from the ground up without using engines or large code bases. I also learned a lot about project workflow, about working on code and managing it for months. I learned a lot about code restructuring and refactoring as well as how to write more efficient code. I also used a sloppy code checker that checks for repetitive and inefficient code. This game was a part of a semester long project in Game Development class as a part of the Guildhall at SMU. The class was taught by a Guildhall teacher who is also a full time industry professional."
         },
         {
-            "id": "5",
+            "id": "6",
             "img": "2048game",
             "type": "Game",
             "title": "2048 Minimax AI",
-            "status": "In Progress",
+            "status": "Finished",
             "language": "Python",
             "tools": "PyGame",
             "date": "Fall 2015",
@@ -75,7 +89,7 @@
             "description": "For this project I created a 2048 game clone in Python, and then made an AI to play it. To make the AI I used a Min-Max tree with Alpha-Beta Tree Pruning to calculate moves using a heuristic function that I made. For heuristics I assigned points for the highest number tile and the number of empty spaces. This project is still in development and I am continuing to work on it to make it run more efficiently."
         },
         {
-            "id": "6",
+            "id": "7",
             "img": "garouting",
             "type": "Paper/Software",
             "title": "Partitioning Networks using Genetic Algorithms",
@@ -91,7 +105,7 @@
         },
         
         {
-            "id": "7",
+            "id": "8",
             "img": "pokemon",
             "type": "Game",
             "title": "Pokemon Battle Clone",
@@ -105,7 +119,7 @@
             "description": " "
         },
         {
-            "id": "8",
+            "id": "9",
             "img": "searchengine",
             "type": "Software",
             "title": "XML Parsing/Searching Engine",
