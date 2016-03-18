@@ -1,0 +1,8 @@
+{{#blocks}}
+<div class="portfolio-block animate1" id="{{id}}">
+	<span class="inner-container">
+		<span class="portfolio-picture"><img src="../img/{{img}}thumb.gif"/></span>
+	    <span class="sidebar green"><span>{{title}} </span> </span>
+	</span>
+</div>
+{{/blocks}}

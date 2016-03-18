@@ -2,96 +2,138 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
+    <meta name="msvalidate.01" content="E170F3C82982B582595F6B2655F0563E" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-
     <title>JD Francis Portfolio</title>
-
     <!-- Bootstrap Core CSS -->
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="css/normalize.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- Custom Fonts -->
+    <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <!-- FontAwesome -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome Icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- My CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <!-- My Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
+
 <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <a class="navbar-brand" href="#top">
-    <span class="fname">JD</span> <span class="lname">FRANCIS</span>
-    </a>
-    <ul class="nav navbar-nav navbar-right">
-        <li class="navlist"><a href="#about">About</a></li>
-        <li class="navlist"><a href="#skills">Skills</a></li>
-        <li class="navlist"><a href="#portfolio">Portfolio</a></li>
-        <li class="navlist"><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#top">
+                <span class="fname">JD</span> <span class="lname">FRANCIS</span>
+            </a>
+            <button type="button" class="navbar-toggle collapsed box-shadow-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" ariexpanded="false">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navlist"><a href="#about">About</a></li>
+                <li class="navlist"><a href="#block-skills">Skills</a></li>
+                <li class="navlist"><a href="#portfolio">Portfolio</a></li>
+                <li class="navlist"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="body-block head-block" id="top">
+    <div class="block-body head-block" id="top">
         <div class="center">
-            <img class="icon-img" src="gameico.png"/>
-            <h1 class="header"> JD Francis </h1>
-            <hr style="width:150px; border-width: 3px; margin-bottom:0">
-            <hr style="width:150px; border-width: 3px; margin-top:4px">
-            <h2 class="header"> Game Programmer and Web Developer</h2>
-            <a class="cta-block" href="#about"><div class="cta-button">Who Am I</div></a>
+            <img alt="" class="icon-img" src="img/gameico.gif" />
+            <h1 class="header"> John David (JD) Francis </h1>
+            <hr style="margin-bottom:0" class="line-style" >
+            <hr style="margin-top:4px" class="line-style" >
+            <h2 class="header"> Web Developer/<br> Game Programmer </h2>
+            <a class="cta-block" href="#about">
+                <div class="cta-button blue">Who Am I</div>
+            </a>
         </div>
     </div>
-    <div class="body-block" id="about">
-        <div class="container">     
-                <i class="fa fa-user about-icon"> </i>
-            <div class="about-block">
-            <h2 style="margin:auto; margin-bottom:25px; text-align:center"> About Me </h2>
-                <p> My name is John David Francis, but everybody calls me JD. <br> I am passionate about gaming, a programming student, an e-sports enthusiast, an avid coffee drinker, but most importantly, I make games and websites. <br> I have a passion for developing creative and entertaining games. </p>
+    <div class="block-body" id="about">
+        <div class="container">
+            <div class="about-icon">
+                <img src="img/headshotPic.jpg" alt="" />
             </div>
-            <a class="cta-block" href="#contact" style="margin-top:25px"><div class="cta-button blue">Hire Me</div></a>
+            <div class="about-block">
+                <h2>Hi There!</h2>
+                <p class="animate1"> My name is John David Francis, but everyone calls me JD. </p>
+                <p class="animate1"> I'm currently a third-year programming student at Southern Methodist University studying Computer Science with a Game Development specialization. I am many things including: programming student, gaming fanatic, self-proclaimed nerd, e-sports enthusiast, avid coffee drinker, but most importantly:
+                    <br> I love developing games and websites. </p>
+                <p class="animate1"> I have a few years of engineering experience, over a year of web development experience, and I am in love with web development, games, and engineering. I adore being creative and thinking outside the box. Possibly my greatest strength in life is my ability to learn new things and adapt to anything that life throws my way.
+                </p>
+            </div>
+            <div class="double-cta-button-container">
+                <a class="cta-button green green-border animate1" href="#contact">Contact Me <i class="fa fa-envelope"></i></a>
+                <a class="cta-button blue blue-border animate1" href="#portfolio">See My Work<i class="fa fa-arrow-down"></i></a>
+            </div>
         </div>
     </div>
-    <div class="body-block" id="skills">
-        <h2> Skills section </h2>
+    <div class="block-body green" id="block-skills">
+        <h2 id="h2-skills"> Skills </h2>
+        <div class="container">
+            <div class="col-md-4 animate1">
+                <i class="fa fa-gamepad skill-icon"></i>
+                <h2> Game Development </h2>
+                <p> I develop games using C++, Python, Java, and other languages with engines like Unity, PyGame, Processing, Gamemaker, as well as custom engines from scratch. I'm very familiar with OOP and modular programming, as well as good memory management. </p>
+            </div>
+            <div class="col-md-4 animate1">
+                <i class="fa fa-laptop skill-icon"></i>
+                <h2> Web Development </h2>
+                <p> I develop User Interfaces (UI) and general front-end for both static and dynamic websites using tools and languages such as HTML5, CSS3, Javascript, JQuery, Bower, Mustache, AngularJS, Bootstrap, the Adobe Creative Suite, and others. I am also very competent with REST APIs. </p>
+            </div>
+            <div class="col-md-4 animate1">
+                <i class="fa fa-terminal skill-icon"></i>
+                <h2> Software Engineering </h2>
+                <p> I have extensive knowledge of object-oriented and modular programming, algorithms, memory management, and scrum-agile development methodology. I have experience in multiple different languages including C++, Java, Python, Javascript, among others. I also have a wealth of experience using Git versioning with both Atlassian Stash and GitHub.</p>
+            </div>
+            <div class="col-md-12 animate1">
+                <h2> Want to see more?</h2>
+                <a class="cta-button green" href="downloads/John_Francis_Resume.pdf" download> My Resume <i class="fa fa-download"></i> </a>
+            </div>
+        </div>
     </div>
-    <div class="body-block" id ="portfolio">
-        <h2> Portfolio </h2>
-        <ul class="portfolio-list">
-            <li class="portfolio-block"> B1 </li>
-            <li class="portfolio-block"> B2 </li>
-            <li class="portfolio-block"> B3 </li>
-            <li class="portfolio-block"> B4 </li>
-            <li class="portfolio-block"> B5 </li>
-            <li class="portfolio-block"> B6 </li>
-            <li class="portfolio-block"> B7 </li>
-            <li class="portfolio-block"> B8 </li>
-            <li class="portfolio-block"> B9 </li>
-        </ul>
+    <div class="block-body" id="portfolio">
+        <h2> My Portfolio </h2>
+        <h4>  With links to the code for each <br> Or visit my GitHub: <a href="https://github.com/DejayJD" target="_top"><i class="fa fa-github"></i></a> </h4>
+        <div class="container">
+            <div id="portfolio-block-template"></div>
+        </div>
+        <div id="portfolio-modal-template"></div>
     </div>
-    <div class="body-block alt-block" id="contact">
-        <h2> Contact section </h2>
+    <div class="block-body contact-block orange" id="contact">
+        <h2 style="margin-bottom:40px"> Contact Me </h2>
+        <div class="form-style-8">
+            <form action="//formspree.io/jdfrancis@smu.edu" method="POST">
+                <input type="text" placeholder="Name" name="name" />
+                <input type="text" placeholder="Email" name="_replyto" />
+                <input type="text" placeholder="Subject" name="_subject" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value="//site.io/thanks.html" />
+                <textarea placeholder="Type your message here..." name="message" onkeyup="adjust_textarea(this)"></textarea>
+                <button class="cta-button orange" type="submit">Send <i class="fa fa-paper-plane send-icon"></i></button>
+            </form>
+        </div>
     </div>
-    <div class="footer">
-        <h2> Footer </h2>
-    </div>
-
-
-    
+    <footer class="footer">
+        <a href="https://github.com/DejayJD" target="_top"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/johndfrancis" target="_top"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/bombbomb45" target="_top"><i style="padding-left:6px;" class="fa fa-facebook"></i></a>
+        <a href="mailto:jdfrancis@smu.edu" target="_top"><i class="fa fa-envelope"></i></a>
+        <hr style="width:200px;">
+        <p><a style="color:#E0DFDF" href="mailto:jdfrancis@smu.edu"> jdfrancis@smu.edu </a> | 817-682-6693 </p>
+    </footer>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Mustache -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
     <!-- My JavaScript -->
-    <script src="js/js.js"></script>
+    <script src="js/site.min.js"></script>
 </body>

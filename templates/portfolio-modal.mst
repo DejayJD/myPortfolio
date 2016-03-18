@@ -1,0 +1,49 @@
+<div id="modal{{id}}" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                        <div class="col-md-12">
+                            <div class="modal-image-wrapper">
+                                <img alt="" src="../img/{{img}}1.gif" class="modal-image"/>
+                            </div>
+                        </div>
+                        <div class="col-md-12 h-100">
+                            <h2>{{title}}</h2>
+                                <table class="table">
+                                    <tr>
+                                        <td> Project Type: </td>
+                                        <td> <b>{{type}}</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Project Status:</td>
+                                        <td><b>{{status}}</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td> Programming Language Used: </td>
+                                        <td> <b>{{language}}</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date:</td>
+                                        <td> <b>{{date}}</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td> Other Tools used:</td>
+                                        <td> <b>{{tools}}</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Links:</td>
+                                        <td> {{#links}}<a href="{{href}}"><i class="modal-link-icon fa fa-{{icon}}"></i></a> {{/links}}</td>
+                                    </tr>
+                                </table>
+                        </div>
+                    <div class="col-md-12">
+                        <p class="modal-description"> {{description}} </p>
+                    </div>
+                </div>
+            <div class="modal-close" data-dismiss="modal"><i class="fa fa-times-circle-o"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
